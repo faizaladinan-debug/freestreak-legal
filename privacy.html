@@ -5,27 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FreeStreak Privacy Policy</title>
   <style>
-    body {
-      font-family: -apple-system, Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #1A2E2D;
-      background: #F7F5F0;
-    }
+    body { font-family: -apple-system, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1A2E2D; background: #F7F5F0; }
     h1, h2 { color: #2D8B85; }
     a { color: #2D8B85; }
+    em { color: #5C7A78; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><em>Last updated: [DATE]</em></p>
+  <p><em>Last updated: 23 August 2026</em></p>
 
-  PASTE YOUR PRIVACY POLICY TEXT HERE.
-  Put each paragraph inside <p> ... </p> tags,
-  and each section heading inside <h2> ... </h2> tags.
+  <p>FreeStreak is a personal recovery-tracking app. We know this is a sensitive category — the data you put into an app like this can be some of the most private information you have. This policy explains, in plain language, exactly what we collect, why, and how you can control or delete it. If anything here is unclear, email us at freestreak4u@gmail.com.</p>
 
-  <p>Contact: freestreak4u@gmail.com</p>
+  <h2>The short version</h2>
+  <ul>
+    <li>You don't need to create an account or give us your name, email, or phone number to use FreeStreak. The app signs you in anonymously the first time you open it.</li>
+    <li>Everything you track — your streak, relapses, urges, mood, journal entries, habits, and your "Why" — is stored in your private account, identified only by an anonymous ID unless you choose to back it up.</li>
+    <li>We don't show ads, and we don't use any third-party advertising or ad-tracking SDKs. Nothing in this app is monetized by watching what you do.</li>
+    <li>You can permanently delete everything with one button, at any time, from Settings.</li>
+  </ul>
+
+  <h2>The anonymous ID and how sign-in works</h2>
+  <p>By default, FreeStreak creates an anonymous account for you the first time you open the app, using Firebase Authentication. This gives your data a private, random ID (a "UID") so it can be saved and reloaded — but it isn't tied to your name, email, phone number, or any other personal identifier, and we never ask for one.</p>
+  <p>If you want your progress to survive a lost phone, a reinstall, or a new device, you can optionally back it up in Settings → Back up my progress. This links your anonymous account to a Google account of your choosing, using Firebase's standard account-linking flow. Your existing data isn't copied or duplicated when you do this — the same account simply becomes recoverable with that Google sign-in. If you back up, we store the email address associated with that Google account so it can be shown back to you in Settings ("Backed up as ...") and so you can sign back in on another device.</p>
+  <p>Google Sign-In is used only to let you recover your data. We do not use it for advertising, tracking, or building any kind of profile about you, and we don't share it with anyone.</p>
+
+  <h2>What we store</h2>
+  <p>Everything below is stored in your account (identified by your anonymous or linked UID) in Firebase Firestore, a database service run by Google. Nothing is stored on our own servers, because we don't run any — Firebase is the only backend this app has. Specifically, we store:</p>
+  <ul>
+    <li><strong>Streak data</strong> — your start date, your best streak, and related timestamps used to calculate your current and longest streaks.</li>
+    <li><strong>Relapse logs</strong> — when you log a relapse: the date and time, whether it was a single slip or a binge, the feeling/trigger you selected, the time of day (detected automatically from your device's clock at the moment you log it — this is not location data), and any optional notes you write.</li>
+    <li><strong>Urge logs</strong> — when you use the Emergency tool or mark an urge as passed, so your "urges overcome" count can be shown to you.</li>
+    <li><strong>Check-ins</strong> — the mood and energy ratings and optional notes you save from the Journal tab.</li>
+    <li><strong>Habits and habit history</strong> — any habits you create (name, optional remark, color, icon) and your day-by-day completion history for them.</li>
+    <li><strong>Your "Why"</strong> — the personal note you write about why you're doing this, shown back to you when you need it most.</li>
+    <li><strong>App settings</strong> — small preferences like your tracking mode (Flexible/Hard) and notification setting.</li>
+  </ul>
+  <p>We do not collect your name, physical address, phone number, contacts, photos, location, or device identifiers beyond what Firebase needs to operate (like the anonymous UID and, if you sign in, your Google account email).</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We don't show ads.</li>
+    <li>We don't use third-party advertising or ad-tracking SDKs of any kind.</li>
+    <li>We don't sell or rent your data to anyone, for any reason.</li>
+    <li>We don't share your recovery data with third parties.</li>
+    <li>We don't use your data to build a profile for marketing.</li>
+  </ul>
+
+  <h2>Where your data lives</h2>
+  <p>All app data is stored on Google Firebase servers (Firebase Authentication and Cloud Firestore), which run on Google Cloud infrastructure. Google acts as our data processor and is bound by its own security and data-processing terms. We don't operate any separate servers of our own.</p>
+
+  <h2>Your control over your data</h2>
+  <p>You can permanently delete your data at any time from Settings → Delete All Data. This deletes every relapse, urge, check-in, habit, and habit-completion record, and resets your streak and "Why" text — permanently, and it cannot be undone. Your anonymous (or linked) account itself stays active afterward so the app keeps working, but it's returned to the same blank state as a brand-new install.</p>
+  <p>Settings → Reset Streak is a lighter option: it clears just your streak and relapse history while keeping your badges, journal, and habits intact.</p>
+  <p>If you've backed up with Google and want to stop, Settings → Sign Out disconnects this device from that Google account (your backed-up data stays safe under that account and isn't deleted) and starts a fresh, local anonymous session.</p>
+  <p>If you'd like your data deleted and have any trouble using the in-app options, email us at freestreak4u@gmail.com and we'll take care of it.</p>
+
+  <h2>Children's privacy</h2>
+  <p>FreeStreak is not directed at children and is not intended for use by anyone under 13. We don't knowingly collect data from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes in a meaningful way, we'll update the "Last updated" date above. Significant changes will be reflected in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, concerns, or a data deletion request you can't complete in-app: freestreak4u@gmail.com</p>
 </body>
 </html>
